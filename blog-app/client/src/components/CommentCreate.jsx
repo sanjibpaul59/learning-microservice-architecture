@@ -17,12 +17,11 @@ const CommentCreate = ({ postId }) => {
   return (
     <div>
       <form onSubmit={onSubmit}>
-        <div className="mb-3">
-          <label htmlFor="comment" className="form-label">
+        <div className="mb-3 form-group">
+          <label className="form-label">
             New Comment
           </label>
           <input
-          id="comment"
             value={content}
             onChange={e => setContent(e.target.value)}
             className="form-control"
